@@ -1,7 +1,13 @@
 package com.example.pokedex.data.remote.responses.pokemon_details
 
+
+import com.google.gson.annotations.SerializedName
+
 data class Ability(
+    @SerializedName("ability")
     val ability: AbilityX,
-    val is_hidden: Boolean,
+    @SerializedName("is_hidden")
+    val isHidden: Boolean,
+    @SerializedName("slot")
     val slot: Int
 )
